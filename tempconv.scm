@@ -34,7 +34,7 @@
 
 
 (define (print-converted-temp temp-input)
-  (let ((temp-unit(yank-unit temp-input))
+  (let ((temp-unit (yank-unit temp-input))
         (temp-number (string->number (yank-temp temp-input))))
     (format #t "~2,1f~A\n"
             (convert-temp temp-number temp-unit)
